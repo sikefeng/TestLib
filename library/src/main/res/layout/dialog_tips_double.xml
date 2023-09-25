@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="#000"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_double_dialog_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <org.cocos2dx.javascript.widget.StrokeTextView
+        android:id="@+id/src"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/text_sub_dialog_title"
+        android:textColor="#FFF2D8"
+        android:textSize="18dp"
+        app:strokeColor="#7492FF"
+        app:layout_constraintEnd_toEndOf="@+id/bg"
+        app:layout_constraintStart_toStartOf="@+id/bg"
+        app:layout_constraintTop_toTopOf="@+id/bg" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_emploteer_close"
+        app:layout_constraintTop_toTopOf="@+id/bg"
+        app:layout_constraintEnd_toEndOf="@+id/bg"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/ic_double_btn"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:text="@string/text_double"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/bg"
+        app:layout_constraintBottom_toBottomOf="@+id/bg"
+        app:layout_constraintStart_toStartOf="@+id/bg"
+      />
+</androidx.constraintlayout.widget.ConstraintLayout>

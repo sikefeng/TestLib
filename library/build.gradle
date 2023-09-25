@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.github.sikefeng'
-version = '2.0.2'
+version = '2.0.3'
 
 android {
     compileSdkVersion 31
@@ -44,7 +44,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.sikefeng'
                 artifactId = 'testLib'
-                version = '2.0.2'
+                version = '2.0.3'
             }
         }
     }

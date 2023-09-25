@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_marginHorizontal="22dp">
+
+
+    <com.hjq.shape.layout.ShapeConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="28dp"
+        app:shape_radius="16dp"
+        app:shape_solidColor="#84C0F6"
+        app:shape_strokeColor="#4791DA"
+        app:shape_strokeWidth="3dp">
+
+        <com.hjq.shape.view.ShapeTextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingHorizontal="11dp"
+            android:paddingVertical="10dp"
+            android:text="@string/text_up_reward_1"
+            android:textColor="#fffc7430"
+            android:textSize="12dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shape_radius="8dp"
+            app:shape_solidColor="#BFE1FF" />
+
+        <com.hjq.shape.layout.ShapeConstraintLayout
+            android:id="@+id/tipsLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:paddingBottom="14dp"
+            app:layout_constraintTop_toBottomOf="@+id/text1"
+            app:shape_radius="8dp"
+            app:shape_solidColor="#689FE5">
+
+            <com.hjq.shape.view.ShapeTextView
+                android:id="@+id/tipsText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingHorizontal="21dp"
+                android:paddingVertical="9dp"
+                android:text="@string/text_up_reward_2"
+                android:textColor="#ff0b5290"
+                android:textSize="14dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shape_radius="8dp"
+                app:shape_solidColor="#EBF4FF" />
+
+            <com.hjq.shape.view.ShapeTextView
+                android:layout_width="37dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="14dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:rotation="335.65"
+                android:text="tips 1"
+                android:textColor="#ff0072d7"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shape_radius="4dp"
+                app:shape_solidColor="#BFE1FF" />
+
+
+            <com.hjq.shape.view.ShapeTextView
+                android:id="@+id/tipsText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingHorizontal="21dp"
+                android:paddingVertical="9dp"
+                android:text="@string/text_up_reward_3"
+                android:textColor="#ff0b5290"
+                android:textSize="14dp"
+                app:layout_constraintTop_toBottomOf="@+id/tipsText1"
+                app:shape_radius="8dp"
+                app:shape_solidColor="#EBF4FF" />
+
+            <com.hjq.shape.view.ShapeTextView
+                android:layout_width="37dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:rotation="335.65"
+                android:text="tips 2"
+                android:textColor="#ff0072d7"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tipsText1"
+                app:shape_radius="4dp"
+                app:shape_solidColor="#BFE1FF" />
+
+            <com.hjq.shape.view.ShapeTextView
+                android:id="@+id/tipsText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="14dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:paddingHorizontal="21dp"
+                android:paddingVertical="9dp"
+                android:text="@string/text_up_reward_4"
+                android:textColor="#ff0b5290"
+                android:textSize="14dp"
+                app:layout_constraintTop_toBottomOf="@+id/tipsText2"
+                app:shape_radius="8dp"
+                app:shape_solidColor="#EBF4FF" />
+
+            <com.hjq.shape.view.ShapeTextView
+                android:layout_width="37dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:rotation="335.65"
+                android:text="tips 3"
+                android:textColor="#ff0072d7"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tipsText2"
+                app:shape_radius="4dp"
+                app:shape_solidColor="#BFE1FF" />
+
+            <com.hjq.shape.view.ShapeTextView
+                android:layout_width="37dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/text_up_reward_5"
+                android:textColor="#ff863c00"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tipsText2"
+                app:shape_radius="4dp"
+                app:shape_solidColor="#FFB070" />
+
+        </com.hjq.shape.layout.ShapeConstraintLayout>
+
+
+        <CheckedTextView
+            android:id="@+id/checkTipsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:checked="false"
+            android:drawableStart="@drawable/selector_check_reward_up_tips"
+            android:drawablePadding="5dp"
+            android:text="@string/text_up_reward_6"
+            android:textColor="#ff136dbd"
+            android:textSize="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/tipsLay" />
+
+
+        <TextView
+            android:id="@+id/submitBtnTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/pic_dialog_reward_up_btn"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:text="@string/text_up_reward_submit"
+            android:textColor="#ffffe8a3"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkTipsTv" />
+
+
+    </com.hjq.shape.layout.ShapeConstraintLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/pic_dialog_reward_up_top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/text_up_reward"
+        android:textColor="#8E510F"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</FrameLayout>

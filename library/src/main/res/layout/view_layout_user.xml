@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="#000">
+
+    <Space
+        android:id="@+id/guideTargetView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userGoldTv"
+        app:layout_constraintEnd_toEndOf="@+id/userUsTv"
+        app:layout_constraintStart_toStartOf="@+id/userGoldTv"
+        app:layout_constraintTop_toTopOf="@+id/userGoldTv" />
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/ic_setting"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/userUsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:paddingEnd="6dp"
+        android:drawableStart="@mipmap/icon_us_page"
+        android:gravity="center"
+        android:minWidth="125dp"
+        android:text="0"
+        android:textColor="#ffffffff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shape_radius="25dp"
+        tools:text="1006"
+        tools:shape_solidColor = "#00ffff"
+        app:shape_solidColor="#15ffffff" />
+
+    <ImageView
+        android:id="@+id/userUsIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_us_page"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/userUsTv"
+        app:layout_constraintStart_toStartOf="@+id/userUsTv"
+        app:layout_constraintTop_toTopOf="@+id/userUsTv" />
+
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/userGoldTv"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:drawableStart="@mipmap/icon_gold_page"
+        android:gravity="center"
+        android:minWidth="125dp"
+        android:paddingEnd="6dp"
+        android:text="0"
+        android:textColor="#ffffffff"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/userUsTv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shape_radius="25dp"
+        app:shape_solidColor="#15ffffff" />
+
+    <ImageView
+        android:id="@+id/userGoldIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_gold_page"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/userGoldTv"
+        app:layout_constraintStart_toStartOf="@+id/userGoldTv"
+        app:layout_constraintTop_toTopOf="@+id/userGoldTv" />
+
+    <TextView
+        android:id="@+id/goldAnimTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@mipmap/icon_gold_s"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        android:textColor="#ffffffff"
+        android:textSize="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/userGoldTv"
+        app:layout_constraintEnd_toEndOf="@+id/userGoldTv"
+        app:layout_constraintStart_toStartOf="@+id/userGoldTv"
+        tools:text="+100" />
+
+    <TextView
+        android:id="@+id/usAnimTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@mipmap/icon_us_s"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        android:textColor="#ffffffff"
+        android:textSize="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/userUsTv"
+        app:layout_constraintEnd_toEndOf="@+id/userUsTv"
+        app:layout_constraintStart_toStartOf="@+id/userUsTv"
+        tools:text="+100" />
+
+    <com.hjq.shape.layout.ShapeFrameLayout
+        android:id="@+id/vfLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/userGoldTv"
+        app:shape_radius="24dp"
+        app:shape_solidColor="#15FFFFFF"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@mipmap/icon_dm_trumpet" />
+
+        <ImageView
+            android:id="@+id/vfCloseIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="7dp"
+            android:src="@mipmap/icon_dm_close" />
+
+
+
+        <AdapterViewFlipper
+            android:id="@+id/viewFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="32dp"
+            android:flipInterval="10000" />
+
+    </com.hjq.shape.layout.ShapeFrameLayout>
+
+    <org.cocos2dx.javascript.view.TipsIconView
+        android:id="@+id/new_activity"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        app:bottom_text="@string/text_activity"
+        app:icon_drawable="@drawable/ic_activity"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setting"
+        app:tips_text="New" />
+
+    <org.cocos2dx.javascript.view.TipsIconView
+        android:id="@+id/double_icon"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        app:bottom_text="@string/text_double"
+        app:icon_drawable="@drawable/ic_vip"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="36dp"
+        app:layout_goneMarginTop="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userUsTv"
+        app:tips_text="New" />
+
+    <FrameLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

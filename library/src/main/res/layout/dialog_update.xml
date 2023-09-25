@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_update_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/text_new_version"
+        android:textColor="@color/update_dialog_title_color"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/bg"
+        app:layout_constraintStart_toStartOf="@+id/bg"
+        app:layout_constraintTop_toTopOf="@+id/bg" />
+
+    <EditText
+        android:id="@+id/contentView"
+        android:layout_width="0dp"
+        android:layout_height="112dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_update_edit_bg"
+        android:gravity="top|start"
+        android:inputType="none"
+        android:maxLines="6"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="12dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/update_dialog_content_color"
+        android:textSize="12dp"
+        android:focusableInTouchMode="false"
+        android:enabled="true"
+        app:layout_constraintEnd_toEndOf="@+id/bg"
+        app:layout_constraintStart_toStartOf="@+id/bg"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:text="dd\nrd\ndd\ndd\nddd\ntt\tt" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:buttonTint="@color/update_dialog_checkbox_color"
+        app:layout_constraintStart_toStartOf="@+id/bg"
+        app:layout_constraintTop_toBottomOf="@+id/contentView" />
+
+    <TextView
+        android:id="@+id/check_box_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_not_tip_update"
+        android:textColor="@color/update_dialog_tips_color"
+        app:layout_constraintEnd_toEndOf="@+id/bg"
+        android:layout_marginEnd="20dp"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox"
+        app:layout_constraintStart_toEndOf="@+id/checkbox"
+        app:layout_constraintTop_toTopOf="@+id/checkbox" />
+
+    <TextView
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/receive_btn_ripple"
+        android:clickable="true"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/text_update_now"
+        android:textColor="@color/update_dialog_btn_color"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/bg"
+        app:layout_constraintStart_toStartOf="@+id/bg"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_reback_close"
+        app:layout_constraintEnd_toEndOf="@+id/bg"
+        app:layout_constraintTop_toTopOf="@+id/bg"
+        android:layout_marginEnd="30dp"
+         />
+</androidx.constraintlayout.widget.ConstraintLayout>
